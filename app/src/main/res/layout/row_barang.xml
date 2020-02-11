@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="@dimen/mainLeft"
+    android:layout_marginRight="@dimen/mainRight"
+    card_view:cardCornerRadius="10dp"
+    android:id="@+id/cardvw"
+    android:background="#DDE2E8"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/lnr1"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardvw2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card_view:cardCornerRadius="20dp"
+            android:layout_margin="5dp"
+            android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/imagevw"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/arisv"
+            android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+                android:id="@+id/tv_judul"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:text="judul"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textStyle="bold" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_keterangan"
+            android:layout_width="wrap_content"
+            android:text="ISI"
+
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_lokasi"
+                android:text="LOKASI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_hubungi"
+                android:background="@drawable/btnrounded_bg"
+                android:padding="0dp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:text="Hubungi"/>
+
+            <!-- HIDE CONYENT -->
+            <TextView
+                android:id="@+id/tv_wa"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WA"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

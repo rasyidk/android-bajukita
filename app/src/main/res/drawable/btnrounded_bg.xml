@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <!--apply button background transparent, full opacity-->
+            <solid android:color="#fff"/>
+            <!--make button border solid color, nontransparent-->
+
+            <corners android:radius="8dp"/> <gradient
+            android:angle="90"
+
+            android:startColor="#F87391"
+            android:endColor="#FF56B8"
+            android:type="linear" />
+
+
+
+        </shape>
+    </item>
+</selector>

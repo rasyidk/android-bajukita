@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DonasiActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:background="@drawable/gradientbg"
+               android:layout_height="match_parent"
+               android:layout_weight="80">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ImageView
+                       android:layout_width="25dp"
+                       android:layout_marginLeft="@dimen/mainLeft"
+                       android:layout_marginTop="15dp"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/backbutton"/>
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:src="@drawable/chardua"
+                       android:layout_height="110dp"
+                       android:layout_alignParentBottom="true"
+                       android:scaleType="fitEnd"
+                       android:layout_alignParentRight="true"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Apa Barangmu?"
+                       android:layout_marginLeft="@dimen/mainLeft"
+                       android:layout_alignParentBottom="true"
+                       android:textColor="#FFF"
+                       android:layout_marginBottom="25dp"
+                       android:textSize="30dp"/>
+               </RelativeLayout>
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="20">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_nmbrg_dns"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/mainLeft"
+                            android:hint="Nama Baranng"
+                            android:backgroundTint="#FF56B8"
+                            android:layout_marginRight="@dimen/mainRight"/>
+
+                        <EditText
+                            android:id="@+id/et_ket_dns"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/mainLeft"
+                            android:hint="Keterangan Barang"
+                            android:backgroundTint="#FF56B8"
+                            android:layout_marginRight="@dimen/mainRight"/>
+
+                        <EditText
+                            android:id="@+id/et_lokasi_dns"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/mainLeft"
+                            android:hint="Lokasi(Kota,Provinsi)"
+                            android:backgroundTint="#FF56B8"
+                            android:layout_marginRight="@dimen/mainRight"/>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="@dimen/mainRight"
+                            android:layout_marginLeft="@dimen/mainLeft"
+                            android:background="#DDE2E8"
+                            android:layout_marginTop="25dp"
+                            android:layout_height="160dp">
+                        <ImageView
+                            android:id="@+id/img_donasi_dns"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/imagebutton"
+                            android:onClick="chooseFile"
+                            />
+
+                        </RelativeLayout>
+                        <Button
+                            android:id="@+id/btn_donasi_dns"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/btnrounded_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DOnasikan"
+                            android:layout_marginRight="@dimen/mainRight"
+                            android:layout_marginLeft="@dimen/mainLeft"/>
+                    </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

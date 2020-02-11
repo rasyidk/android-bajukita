@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:background="@drawable/gradientbg"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Log out"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="@dimen/mainRight"
+                        android:textColor="@color/white"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_profile"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/user"
+                            app:civ_border_color="#fff"
+                            app:civ_border_width="2dp" />
+
+                        <TextView
+                            android:id="@+id/tv_nama_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"
+                            android:layout_below="@+id/img_profile"
+                            android:layout_centerHorizontal="true"
+                            android:text="RASYID K"/>
+
+                        <TextView
+                            android:id="@+id/tv_nowa_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_nama_profile"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/white"
+                            android:text="08838383838383"/>
+
+                        <Button
+                            android:id="@+id/btn_edit_profile"
+                            android:layout_below="@+id/tv_nowa_profile"
+                            android:layout_width="wrap_content"
+                            android:padding="6dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="30dp"
+                            android:textColor="#fff"
+                            android:background="@drawable/btnrounded_whiteline"
+                            android:text="Edit Profil"/>
+
+
+
+
+
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="30">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        app:tabGravity="fill"
+                        app:tabIndicatorHeight="4dp"
+                        app:tabMode="fixed"></com.google.android.material.tabs.TabLayout>
+
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager"
+                    android:layout_below="@id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </androidx.viewpager2.widget.ViewPager2>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

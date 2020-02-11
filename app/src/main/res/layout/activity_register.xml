@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="105dp"
+            android:layout_height="114dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/corner"
+            />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/ma_medium"
+            android:text="Create Account"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        >
+
+        <EditText
+            android:id="@+id/txt_namalengkap"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Full Name"
+            android:fontFamily="@font/ma_reguler"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/bg_et"/>
+
+        <EditText
+            android:id="@+id/txt_nowa"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/txt_namalengkap"
+            android:layout_marginTop="10dp"
+            android:hint="No. WhatsApp"
+            android:fontFamily="@font/ma_reguler"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/bg_et"/>
+
+        <EditText
+            android:id="@+id/log_edtEmail"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/txt_nowa"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:fontFamily="@font/ma_reguler"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/bg_et"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/rc_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/log_edtEmail"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/txt_password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_et"
+                android:fontFamily="@font/ma_reguler"
+                android:hint="Password"
+                android:padding="20dp"
+                android:paddingEnd="40dp"
+                android:textSize="15dp" />
+            <cyd.awesome.material.AwesomeText
+                android:id="@+id/ImgShowPassword"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/colorPrimary"
+                app:awesome_font="material_design"
+                app:awesome_icon="MD_VISIBILITY_OFF"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/txt_confirm_password"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/rc_pass"
+            android:layout_marginTop="10dp"
+            android:hint="Confirm Password"
+            android:fontFamily="@font/ma_reguler"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/bg_et"
+
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/rl2"
+        android:layout_marginTop="10dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ma_reguler"
+        android:background="@drawable/bg_button"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_sudahpunya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have account account?"
+            android:fontFamily="@font/ma_reguler"/>
+
+        <TextView
+            android:id="@+id/txt_masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/txt_sudahpunya"
+            android:fontFamily="@font/ma_medium"
+            android:text="Sign In"
+            android:textColor="@color/colorPrimary"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

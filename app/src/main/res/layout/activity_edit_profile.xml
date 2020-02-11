@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EditProfileActivity">
+
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="@dimen/mainRight"
+        android:layout_marginLeft="@dimen/mainLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img_centang_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/centang"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Edit Profile"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/img_back_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mainLeft"
+        android:layout_marginRight="@dimen/mainRight"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile_edit"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/user"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_gantiprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF56B8"
+            android:text="Ganti Foto Profile"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:onClick="updateprofile"
+            android:layout_below="@id/img_profile_edit"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/et_nama_profile_edit"
+            android:layout_below="@id/tv_gantiprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FF56B8"
+            android:hint="Nama Profile"/>
+
+        <EditText
+            android:id="@+id/et_nowa_profile_edit"
+            android:layout_below="@id/et_nama_profile_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FF56B8"
+            android:hint="Nomor WA"/>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
