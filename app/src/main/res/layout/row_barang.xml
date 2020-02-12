@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginTop="10dp"
+    android:layout_marginTop="20dp"
     android:layout_marginLeft="@dimen/mainLeft"
     android:layout_marginRight="@dimen/mainRight"
     card_view:cardCornerRadius="10dp"
@@ -36,7 +36,7 @@
             android:id="@+id/imagevw"
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            android:src="@drawable/arisv"
+
             android:scaleType="centerCrop"/>
 
         </androidx.cardview.widget.CardView>

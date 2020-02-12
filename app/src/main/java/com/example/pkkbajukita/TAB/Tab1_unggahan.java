@@ -102,15 +102,15 @@ public class Tab1_unggahan extends Fragment {
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("user",MODE_PRIVATE);
         String user_id = sharedPreferences.getString("userid","");
 
-        Call<JSONResponse> call = request.getcoba();
+        Call<JSONResponse> call = request.unggahan(user_id);
         call.enqueue(new Callback<JSONResponse>() {
             @Override
             public void onResponse(Call<JSONResponse> call, Response<JSONResponse> response) {
 
-                    JSONResponse jsonResponse = response.body();
-//                dataproses = new ArrayList<>(Arrays.asList(jsonResponse.getUnggahan()));
-//                adapterx = new AdapterTab1_unggahan(dataproses);
-//                recyclerView.setAdapter(adapterx);
+                JSONResponse jsonResponse = response.body();
+                dataproses = new ArrayList<>(Arrays.asList(jsonResponse.getUnggahan()));
+                adapterx = new AdapterTab1_unggahan(dataproses);
+                recyclerView.setAdapter(adapterx);
             }
 
             @Override

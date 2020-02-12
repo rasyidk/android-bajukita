@@ -13,9 +13,6 @@ public interface RequestInterface {
     @GET("/select_barang.php")
     Call<JSONResponse> getJSON();
 
-    @GET("/select_laporkan.php")
-    Call<JSONResponse> getcoba();
-
 
     @FormUrlEncoded
     @POST("/upload_barang.php")

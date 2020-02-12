@@ -53,11 +53,13 @@
                </RelativeLayout>
            </LinearLayout>
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_weight="20">
+
 
 
 
@@ -68,13 +70,13 @@
 
                         <EditText
                             android:id="@+id/et_nmbrg_dns"
-                            android:layout_marginTop="20dp"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="57dp"
                             android:layout_marginLeft="@dimen/mainLeft"
-                            android:hint="Nama Baranng"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="@dimen/mainRight"
                             android:backgroundTint="#FF56B8"
-                            android:layout_marginRight="@dimen/mainRight"/>
+                            android:hint="Nama Baranng" />
 
                         <EditText
                             android:id="@+id/et_ket_dns"
@@ -108,20 +110,20 @@
                             android:id="@+id/img_donasi_dns"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/imagebutton"
-                            android:onClick="chooseFile"
+                            android:scaleType="centerCrop"
+                            android:visibility="invisible"
                             />
 
+                            <ImageView
+                                android:id="@+id/img_donasi_dns_cover"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:onClick="chooseFile"
+                                android:src="@drawable/imagebutton"
+                                />
+
                         </RelativeLayout>
-                        <Button
-                            android:id="@+id/btn_donasi_dns"
-                            android:layout_marginTop="25dp"
-                            android:background="@drawable/btnrounded_bg"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="DOnasikan"
-                            android:layout_marginRight="@dimen/mainRight"
-                            android:layout_marginLeft="@dimen/mainLeft"/>
+
                     </LinearLayout>
 
 
@@ -133,4 +135,16 @@
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <Button
+        android:id="@+id/btn_donasi_dns"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btnrounded_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DOnasikan"
+        android:layout_marginRight="@dimen/mainRight"
+        android:layout_marginLeft="@dimen/mainLeft"/>
 </RelativeLayout>

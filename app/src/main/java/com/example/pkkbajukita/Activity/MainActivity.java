@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     private AdapterBarang adapter;
 
     Button btn_hub;
-    TextView tv_wa, tv_judul;
+    TextView tv_wa, tv_judul , tv_name;
     Button btnl;
 
     ImageView imageprofile;
@@ -87,9 +87,14 @@ public class MainActivity extends AppCompatActivity {
         //setimg
         SharedPreferences sharedPreferences = getSharedPreferences("user",MODE_PRIVATE);
         String img = sharedPreferences.getString("img_profile","");
+        String name =  sharedPreferences.getString("nama_lengkap", "");
         byte[] decodestring = Base64.decode(img,Base64.DEFAULT);
         Bitmap bitmap = BitmapFactory.decodeByteArray(decodestring,0,decodestring.length);
         imageprofile.setImageBitmap(bitmap);
+
+
+        tv_name =  findViewById(R.id.tv_main_name);
+        tv_name.setText("Halo, " + name);
 
 
 
